@@ -8,9 +8,10 @@ public class JavaZoo {
 
     public static void main(String[] args) {
         // Create objects
-        ZooAnimal myFirstAnimal = new ZooAnimal();
+        ZooAnimal myFirstAnimal = new ZooAnimal("Zee", "Monkey", 2, true);
         Cage myFirstCage = new Cage(10, 12, true, false);
-        ZooKeeper myFirstZooKeeper = new ZooKeeper("John", 5000.00, true);
+        ZooKeeper myFirstZooKeeper = new ZooKeeper("John Doe", "Janitor", 5000.00, true);
+        
         
         // Print details of ZooAnimal
         System.out.println("Animal Name: " + myFirstAnimal.getName());
@@ -26,8 +27,9 @@ public class JavaZoo {
 
         // Print details of ZooKeeper
         System.out.println("ZooKeeper Name: " + myFirstZooKeeper.getName());
+        System.out.println("ZooKeeper Title: " + myFirstZooKeeper.getTitle());
         System.out.println("ZooKeeper PayRate: " + myFirstZooKeeper.getPayRate());
-        System.out.println("Does ZooKeeper have a Degree? " + myFirstZooKeeper.hasDegree());
+        System.out.println("Has a Degree? " + myFirstZooKeeper.hasDegree());
 
         // Print the name of the Zoo
         JavaZoo javaZoo = new JavaZoo();
