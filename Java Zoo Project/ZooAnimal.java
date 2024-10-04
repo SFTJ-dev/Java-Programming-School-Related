@@ -1,15 +1,15 @@
-// ZooKeeper class
-public class ZooKeeper {
+// ZooAnimal class
+public class ZooAnimal {
     private String name;
-    private String title;
-    private double payRate;
-    private boolean degree;
+    private String type;
+    private int age;
+    private boolean hungry;
 
-    public ZooKeeper(String name, String title, double payRate, boolean degree) {
+    public ZooAnimal(String name, String type, int age, boolean hungry) {
         this.name = name;
-        this.title = title;
-        this.payRate = payRate;
-        this.degree = degree;
+        this.type = type;
+        this.age = age;
+        this.hungry = hungry;
     }
 
     // Getters and setters
@@ -20,28 +20,28 @@ public class ZooKeeper {
     public void setName(String name) {
         this.name = name;
     }
-    
-    public void setTitle(String title){
-        this.title = title;
-    }
-    
-    public String getTitle() {
-        return title;
+
+    public String getType() {
+        return type;
     }
 
-    public double getPayRate() {
-        return payRate;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void setPayRate(double payRate) {
-        this.payRate = payRate;
+    public int getAge() {
+        return age;
     }
 
-    public boolean hasDegree() {
-        return degree;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public void setDegree(boolean degree) {
-        this.degree = degree;
+    public boolean isHungry() {
+        return hungry;
+    }
+
+    public void setHungry(boolean hungry) {
+        this.hungry = hungry;
     }
 }
