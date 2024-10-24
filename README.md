@@ -2,7 +2,7 @@
   <img src="https://i.pinimg.com/736x/35/2d/e2/352de25983058bc7874e5f9ec6f88c93.jpg" width="100"/>
 </div>
 
-<div id="badges">
+<div id="badges" align="center">>
   <a href="your-linkedin-URL">
     <img src="https://img.shields.io/badge/Facebook-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
