@@ -15,5 +15,5 @@
 </div>
 
 <div id="views" align="center">
-<img src="https://komarev.com/ghpvc/?username=SFTJ-dev&style=flat-square&color=blue" alt=""/>
+<img src="https://komarev.com/ghpvc/?username=SFTJ-dev&style=flat-square&color=ff69b4" alt=""/>
 </div>
