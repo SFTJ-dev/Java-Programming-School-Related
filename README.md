@@ -13,3 +13,5 @@
     <img src="https://img.shields.io/badge/Instagram-magenta?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
   </a>
 </div>
+
+<img src="https://komarev.com/ghpvc/?username=SFTJ-dev&style=flat-square&color=pink" alt=""/>
