@@ -13,7 +13,3 @@
     <img src="https://img.shields.io/badge/Instagram-pink?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Badge"/>
   </a>
 </div>
-
-<div id="views" align="center">
-<img src="https://komarev.com/ghpvc/?username=SFTJ-dev&style=flat-square&color=ff69b4" alt=""/>
-</div>
