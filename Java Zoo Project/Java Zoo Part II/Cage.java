@@ -32,4 +32,17 @@ public class Cage{ //start of the cage class
 	public boolean isCovered(){
 		return covered;
 	} //end of getters
+	
+	//toString
+	public String toString(){
+		return "The length of the cage is " + length + "\nThe width of the cage is " + width + 
+		"\nThe height of the cage is " + height + "\nIs the cage clean? " + clean +
+		"\nIs the cage covered? " + covered;
+	}//end of toString
+	
+	public static void border(int num){
+		for(int x = 1; x<=num; x++){
+		System.out.print("^");
+		}//end of for loop
+	}//end of border
 } //end of the cage class

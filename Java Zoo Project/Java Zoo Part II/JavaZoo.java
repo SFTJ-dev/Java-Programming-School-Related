@@ -13,8 +13,26 @@ public class JavaZoo{
 		
 		 // Print the name of the Zoo
         getZooName("Java Park 'n' Zoo");
+		
+		//display border zoo
+		myFirstCage.border(20);
         
+		//display toString animal
+		System.out.println(" ");
+		System.out.println(myFirstAnimal.toString());
+		
+		//display border animal
+		myFirstCage.border(20);
+        
+		//display toString cage
+		System.out.println(" ");
+		System.out.println(myFirstCage.toString());
+		
+		//display border cage
+		myFirstCage.border(40);
+		
 		//invoke all of the methods
+		System.out.println(" ");
 		myFirstZooKeeper.feedAnimal();
 		myFirstZooKeeper.cleanCage();
 		myFirstAnimal.eat();

@@ -37,4 +37,10 @@ public class ZooAnimal{ //start of the class
 		System.out.println("The ZooAnimal named " + name + " is sleeping!");
 	}
 	
+	//toString
+	public String toString(){
+		return "The name of the animal is " + name + "\nThe type of the animal is " + type + 
+		"\nThe age of the animal is " + age + "\nIs the animal hungry? " + hungry;
+	}//end of toString
+	
 } //end of the class
