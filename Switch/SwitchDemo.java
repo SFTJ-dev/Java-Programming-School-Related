@@ -57,7 +57,7 @@ public class SwitchDemo{
             System.out.println("Not included in the list");
             
             
-        }
+        }//end of switch
         
-    }
-}
+    }//end of main method
+}//end of the class
