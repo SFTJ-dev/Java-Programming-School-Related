@@ -42,4 +42,10 @@ public class Cage{ //start of the cage class
 	public void displayInfo(String name, String type){
 		System.out.println("The cage has an " + animal.getType() +" named " + animal.getName());
 	}
+	
+	public static void border(int num){
+		for(int x = 1; x<=num; x++){
+			System.out.print("^");
+		}//end of for loop
+	}//end of border
 } //end of the cage class
