@@ -1,3 +1,4 @@
+import java.io.*;
         // Create a new scanner with the specified String 
         // Object 
         Scanner scan = new Scanner("Hello Geek!"); 
