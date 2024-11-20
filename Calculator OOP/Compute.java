@@ -5,25 +5,26 @@ public class Compute {
     private double division;
     private boolean firstNumber = true;
 
-    // Method to add a number to the calculations
-    public void addNumber(int number) {
-        if (number == 0) return;
-
-        // Initialize subtraction and division with the first number
+    // Method to initialize subtraction and division for the first number
+    public void initializeFirstNumber(int number) {
         if (firstNumber) {
             subtraction = number;
             division = number;
+            sum = number;
+            product = number;
             firstNumber = false;
-        } else {
-            subtraction -= number;
-            if (number != 0) division /= number;
         }
-
-        sum += number;
-        product *= number;
     }
 
-    // Getters for the calculated values
+    // Add a number to the calculations
+    public void addNumber(int number) {
+        sum += number;
+        subtraction -= number;
+        product *= number;
+        if (number != 0) division /= number;
+    }
+
+    // Getters for results
     public int getSum() {
         return sum;
     }
