@@ -33,7 +33,7 @@ public class CompoundInterestProgram {
             writer.write("Number of Years: " + calculator.getYears() + "\n");
             writer.write("Amount after " + calculator.getYears() + " years: " + String.format("%.2f", amount) + "\n");
             writer.write("-------------------------------\n");
-            write.newLine();
+            writer.newLine();
             writer.flush();
 
             System.out.println("Result saved to CompoundInterestResult.txt.");
