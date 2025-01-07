@@ -27,7 +27,7 @@ public class CompoundInterestProgram {
 
             writer.write("------------PROGRAMMED BY:-----------\n");
             writer.write("Compound Interest Calculation Result:\n");
-			writer.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+	    writer.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
             writer.write("Principal Amount: " + calculator.getPrincipal() + "\n");
             writer.write("Interest Rate: " + calculator.getRate() * 100 + "%\n");
             writer.write("Times Compounded per Year: " + calculator.getTimeCompounded() + "\n");
