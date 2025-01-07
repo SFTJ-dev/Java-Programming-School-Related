@@ -25,14 +25,15 @@ public class CompoundInterestProgram {
 
             System.out.printf("The amount after %d years is: %.2f%n", calculator.getYears(), amount);
 
+            writer.write("------------PROGRAMMED BY:-----------\n");
             writer.write("Compound Interest Calculation Result:\n");
-            writer.write("-------------------------------\n");
+			writer.write("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
             writer.write("Principal Amount: " + calculator.getPrincipal() + "\n");
             writer.write("Interest Rate: " + calculator.getRate() * 100 + "%\n");
             writer.write("Times Compounded per Year: " + calculator.getTimeCompounded() + "\n");
             writer.write("Number of Years: " + calculator.getYears() + "\n");
             writer.write("Amount after " + calculator.getYears() + " years: " + String.format("%.2f", amount) + "\n");
-            writer.write("-------------------------------\n");
+            writer.write("------------SOFIA TABUJARA------------\n");
             writer.newLine();
             writer.flush();
 
