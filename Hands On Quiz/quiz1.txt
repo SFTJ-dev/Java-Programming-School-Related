@@ -1,0 +1,83 @@
+//import the resources
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Books_Db {
+		
+			//the database name
+			private static final String MYCON = "jdbc:mysql://localhost:3306/crud_db";
+			private static final String UNAME = "root";
+			private static final String PWORD = "";
+			
+			
+			//the method to display the data
+			public static void main(String[] args) { 
+				System.out.println("ID      \t" + "TITLE           \t" + " AUTHOR                               \t" + " ISBN       \t" + "PUBLICATION YEAR\t");
+				displayData();
+				//insertData();
+			}
+			
+				
+
+				
+				
+				/*
+				 	try {
+				Connection connection = DriverManager.getConnection(myCon, uName, pWord);
+				Statement statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery(query);
+				resultSet.next();
+				System.out.println(resultSet.getString("field_name"));
+				
+				System.out.println("The database is successfully connected!");
+
+			}catch(Exception e){
+
+				e.printStackTrace();
+				 */
+				
+			
+			//this is the method to display the data from the sql
+			public static void displayData() {
+				 String query = "SELECT * FROM tbl_books";
+			
+				 //connect here
+			try(Connection connection = DriverManager.getConnection(MYCON, UNAME, PWORD);
+				Statement statement = connection.createStatement();
+				ResultSet resultSet = statement.executeQuery(query)){
+				resultSet.next();
+				
+				
+				//use he try with resource
+				while (resultSet.next()) {
+					/*
+					int id = resultSet.getInt("id");
+					String fname = resultSet.getString("first_name");
+					String lname = resultSet.getString("last_name");
+					String email = resultSet.getString("email");
+					*/
+					
+					System.out.println(resultSet.getInt("id") + "\t" + " " + resultSet.getString("title") + "\t" + " " + resultSet.getString("author") + "\t" + " " + resultSet.getString("genre") + 
+							"\t" + " " + resultSet.getString("isbn") + "\t" + " " + resultSet.getString("publication_year"));
+				
+				}
+				
+				/*System.out.println(resultSet.getString("ID"));
+				System.out.println(resultSet.getString("first_name"));
+				System.out.println(resultSet.getString("last_name"));
+				System.out.println(resultSet.getString("email"));
+				*/
+				
+				System.out.println("The database is successfully connected!");
+
+			}catch(Exception e) {
+
+					e.printStackTrace();
+		}
+			
+		}//end of vlass
+
+	}
+
